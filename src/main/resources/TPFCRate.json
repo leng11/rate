@@ -1,0 +1,111 @@
+{
+    "RateRequest": {
+      "Request": {
+        "RequestOption": "Rate",
+        "SubVersion": "2108",
+        "TransactionReference": {
+          "CustomerContext": "CustomerContext"
+        }
+      },
+      "Shipment": {
+        "Shipper": {
+          "Name": "ShipperName",
+          "ShipperNumber": "WA8290",
+          "Address": {
+            "AddressLine": "ShipperAddressLine",
+            "City": "TIMONIUM",
+            "StateProvinceCode": "MD",
+            "PostalCode": "21093",
+            "CountryCode": "US"
+          }
+        },
+        "ShipTo": {
+          "Name": "ShipToName",
+          "Address": {
+            "AddressLine": "ShipToAddressLine",
+            "City": "Alpharetta",
+            "StateProvinceCode": "GA",
+            "PostalCode": "30005",
+            "CountryCode": "US"
+          }
+        },
+        "ShipFrom": {
+          "Name": "ShipFromName",
+          "Address": {
+            "AddressLine": "ShipFromAddressLine",
+            "City": "TIMONIUM",
+            "StateProvinceCode": "MD",
+            "PostalCode": "21093",
+            "CountryCode": "US"
+          }
+        },
+        "PaymentDetails": [
+          {
+            "ShipmentCharge": {
+              "Type": "01",
+              "BillThirdParty": {
+                "AttentionName": "AttentionName",
+                "Name": "Name",
+                "AccountNumber": "WA8290",
+                "Address": {
+                  "AddressLine": "AdressLine",
+                  "City": "NEW YORK",
+                  "StateProvinceCode": "NY",
+                  "PostalCode": "21093",
+                  "CountryCode": "US"
+                }
+              }
+            }
+          },
+          {
+            "ShipmentCharge": {
+              "Type": "02",
+              "BillThirdParty": {
+                "AttentionName": "AttentionName",
+                "Name": "Name",
+                "AccountNumber": "ISUS01",
+                "Address": {
+                  "AddressLine": "AdressLine",
+                  "City": "NEW YORK",
+                  "StateProvinceCode": "NY",
+                  "PostalCode": "21093",
+                  "CountryCode": "US"
+                }
+              }
+            }
+          }
+        ],
+        "Service": {
+          "Code": "03",
+          "Description": "Ground"
+        },
+        "NumOfPieces": "1",
+        "Package": {
+          "PackagingType": {
+            "Code": "02",
+            "Description": "Packaging"
+          },
+          "Dimensions": {
+            "UnitOfMeasurement": {
+              "Code": "IN",
+              "Description": "Inches"
+            },
+            "Length": "5",
+            "Width": "5",
+            "Height": "5"
+          },
+          "PackageWeight": {
+            "UnitOfMeasurement": {
+              "Code": "LBS",
+              "Description": "Pounds"
+            },
+            "Weight": "1"
+          },
+          "ShipmentRatingOptions": {
+		    "NegotiatedRatesIndicator" : "Y",
+            "TPFCNegotiatedRatesIndicator": "Y"
+          }
+        }
+      }
+    }
+}

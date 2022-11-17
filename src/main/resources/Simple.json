@@ -1,0 +1,84 @@
+{
+    "RateRequest": {
+        "Request": {
+            "RequestOption": "Rate",
+            "SubVersion": "1901",
+            "TransactionReference": {
+                "CustomerContext": "verify success with Remote Surcharge is returned when Rate request is submitted with valid Postal code"
+            }
+        },
+        "Shipment": {
+            "NumOfPieces": "1",
+            "Shipper": {
+                "Name": "Shipper_Name",
+                "AttentionName": "GA",
+                "ShipperNumber": "WA8290",
+                "Address": {
+                    "AddressLine": "Shipper_AddressLine1",
+                    "City": "Alpharetta",
+                    "StateProvinceCode": "MA",
+                    "PostalCode": "01368",
+                    "CountryCode": "US"
+                }
+            },
+            "ShipTo": {
+                "Name": "ShipTo_Name",
+                "AttentionName": "\n          ",
+                "Address": {
+                    "AddressLine": "\n            ",
+                    "City": "Alpharetta",
+                    "StateProvinceCode": "RI",
+                    "PostalCode": "02807",
+                    "CountryCode": "US",
+                    "ResidentialAddressIndicator": "?"
+                }
+            },
+            "ShipFrom": {
+                "Name": "ShipFrom_Name",
+                "AttentionName": "\n          ",
+                "Address": {
+                    "AddressLine": "Shipper_AddressLine1",
+                    "City": "Alpharetta",
+                    "StateProvinceCode": "MA",
+                    "PostalCode": "01368",
+                    "CountryCode": "US"
+                }
+            },
+            "PaymentDetails": {
+                "ShipmentCharge": {
+                    "Type": "01",
+                    "BillShipper": {
+                        "AccountNumber": "WA8290"
+                    }
+                }
+            },
+            "Service": {
+                "Code": "01",
+                "Description": "NextDayAir"
+            },
+            "Package": {
+                "PackagingType": {
+                    "Code": "02",
+                    "Description": "Packaging"
+                },
+                "Dimensions": {
+                    "UnitOfMeasurement": {
+                        "Code": "IN",
+                        "Description": "desc"
+                    },
+                    "Length": "2",
+                    "Width": "2",
+                    "Height": "3"
+                },
+                "PackageWeight": {
+                    "UnitOfMeasurement": {
+                        "Code": "LBS",
+                        "Description": "CODE"
+                    },
+                    "Weight": "50"
+                },
+                "PackageServiceOptions": "\n          "
+            }
+        }
+    }
+}

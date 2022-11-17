@@ -87,9 +87,9 @@ has ResponseStatus and Alert object including the status and alert in respective
 
 
 ### Data Schema 
-- [Request Schema RATERequestWrapper](../docs/RATERequestWrapper.md)
+- [Request Schema RATERequestWrapper](docs/RATERequestWrapper.md)
 
-- [Response Schema RATEResponseWrapper](../docs/RATEResponseWrapper.md)
+- [Response Schema RATEResponseWrapper](docs/RATEResponseWrapper.md)
 
 ### Sample Request/Response
 - Simple Rate request

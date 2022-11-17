@@ -1,111 +1,90 @@
 {
-    "RateRequest": {
-      "Request": {
-        "RequestOption": "Rate",
-        "SubVersion": "2108",
-        "TransactionReference": {
-          "CustomerContext": "CustomerContext"
+  "RateRequest": {
+    "Request": {
+      "RequestOption": "Rate",
+      "SubVersion": "2205",
+      "TransactionReference": {
+        "CustomerContext": "Verify Success response with Negotiated Rates is returned when Rate request is submitted with WWE DDU Postal Service, NegotiatedRatesIndicator, TPFCNegotiatedRatesIndicator and Valid Shipper account which has ABR Rates."
+      }
+    },
+    "Shipment": {
+      "Shipper": {
+        "Name": "UPS",
+        "AttentionName": "Anyone",
+        "ShipperNumber": "3217GG",
+        "Address": {
+          "AddressLine": "341 HERENGRACHT",
+          "City": "Alpharetta",
+          "StateProvinceCode": "GA",
+          "PostalCode": "90014",
+          "CountryCode": "US"
         }
       },
-      "Shipment": {
-        "Shipper": {
-          "Name": "ShipperName",
-          "ShipperNumber": "WA8290",
-          "Address": {
-            "AddressLine": "ShipperAddressLine",
-            "City": "TIMONIUM",
-            "StateProvinceCode": "MD",
-            "PostalCode": "21093",
-            "CountryCode": "US"
-          }
-        },
-        "ShipTo": {
-          "Name": "ShipToName",
-          "Address": {
-            "AddressLine": "ShipToAddressLine",
-            "City": "Alpharetta",
-            "StateProvinceCode": "GA",
-            "PostalCode": "30005",
-            "CountryCode": "US"
-          }
-        },
-        "ShipFrom": {
-          "Name": "ShipFromName",
-          "Address": {
-            "AddressLine": "ShipFromAddressLine",
-            "City": "TIMONIUM",
-            "StateProvinceCode": "MD",
-            "PostalCode": "21093",
-            "CountryCode": "US"
-          }
-        },
-        "PaymentDetails": [
-          {
-            "ShipmentCharge": {
-              "Type": "01",
-              "BillThirdParty": {
-                "AttentionName": "AttentionName",
-                "Name": "Name",
-                "AccountNumber": "WA8290",
-                "Address": {
-                  "AddressLine": "AdressLine",
-                  "City": "NEW YORK",
-                  "StateProvinceCode": "NY",
-                  "PostalCode": "21093",
-                  "CountryCode": "US"
-                }
-              }
-            }
-          },
-          {
-            "ShipmentCharge": {
-              "Type": "02",
-              "BillThirdParty": {
-                "AttentionName": "AttentionName",
-                "Name": "Name",
-                "AccountNumber": "ISUS01",
-                "Address": {
-                  "AddressLine": "AdressLine",
-                  "City": "NEW YORK",
-                  "StateProvinceCode": "NY",
-                  "PostalCode": "21093",
-                  "CountryCode": "US"
-                }
-              }
+      "ShipTo": {
+        "Name": "Happy Dog Pet Supply",
+        "AttentionName": "1160b_74",
+        "Address": {
+          "AddressLine": "67 ANCHOR ST",
+          "City": "carrollton",
+          "StateProvinceCode": "MA",
+          "PostalCode": "01373",
+          "CountryCode": "US"
+        }
+      },
+      "ShipFrom": {
+        "Name": "UPS",
+        "AttentionName": "Anyone",
+        "Address": {
+          "AddressLine": "341 HERENGRACHT",
+          "City": "Texas",
+          "StateProvinceCode": "TX",
+          "PostalCode": "77040",
+          "CountryCode": "US"
+        }
+      },
+      "PaymentDetails": {
+        "ShipmentCharge": {
+          "Type": "01",
+          "BillThirdParty": {
+            "AccountNumber": "123456",
+            "Address": {
+              "PostalCode": "07430",
+              "CountryCode": "US"
             }
           }
-        ],
-        "Service": {
-          "Code": "03",
-          "Description": "Ground"
+        }
+      },
+      "Service": {
+        "Code": "01",
+        "Description": "Next Day Air"
+      },
+      "ShipmentRatingOptions": {
+        "TPFCNegotiatedRatesIndicator": "Y",
+        "NegotiatedRatesIndicator": "Y"
+      },
+      "NumOfPieces": "10",
+      "Package": {
+        "PackagingType": {
+          "Code": "02",
+          "Description": "Packaging"
         },
-        "NumOfPieces": "1",
-        "Package": {
-          "PackagingType": {
-            "Code": "02",
-            "Description": "Packaging"
+        "Dimensions": {
+          "UnitOfMeasurement": {
+            "Code": "IN",
+            "Description": "Inches"
           },
-          "Dimensions": {
-            "UnitOfMeasurement": {
-              "Code": "IN",
-              "Description": "Inches"
-            },
-            "Length": "5",
-            "Width": "5",
-            "Height": "5"
+          "Length": "6",
+          "Width": "8",
+          "Height": "7"
+        },
+        "PackageWeight": {
+          "UnitOfMeasurement": {
+            "Code": "LBS",
+            "Description": "LBS"
           },
-          "PackageWeight": {
-            "UnitOfMeasurement": {
-              "Code": "LBS",
-              "Description": "Pounds"
-            },
-            "Weight": "1"
-          },
-          "ShipmentRatingOptions": {
-		    "NegotiatedRatesIndicator" : "Y",
-            "TPFCNegotiatedRatesIndicator": "Y"
-          }
+          "Weight": "5"
         }
       }
     }
+  }
 }
